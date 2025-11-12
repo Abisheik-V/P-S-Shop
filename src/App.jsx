@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Index from './components/Index.jsx'
 import Rates from './components/Rates.jsx'
@@ -22,7 +22,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter basename="/P-S-Shop">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/rates" element={<Rates />} />
@@ -41,7 +41,7 @@ function App() {
         <Route path="/returns" element={<Returns />} />
         <Route path="/docs" element={<Docs />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
