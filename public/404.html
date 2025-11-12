@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script>
+      (function() {
+        var l = window.location;
+        var p = l.pathname + l.search;
+        var q = l.search && l.search.indexOf('=') !== -1 ? '' : '';
+        var newUrl = l.protocol + '//' + l.host + '/P-S-Shop/?p=' + encodeURIComponent(p) + (l.hash || '');
+        window.location.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting…
+  </body>
+</html>

@@ -22,7 +22,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/P-S-Shop">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/rates" element={<Rates />} />
@@ -46,3 +46,4 @@ function App() {
 }
 
 export default App
+
