@@ -12,6 +12,7 @@
 body {
   color: var(--text);
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 /* Navbar */
@@ -25,7 +26,7 @@ body {
   color: #cbd5e1;
 }
 .site-nav .nav-link.active, .site-nav .nav-link:hover {
-  color: lab(61.13% 2.41 -57.88)fff;
+  color: #fff;
 }
 
 /* Override Bootstrap primary to match palette */
@@ -51,6 +52,12 @@ body {
     radial-gradient(900px 300px at 90% 0%, rgba(34, 211, 238, 0.12), transparent),
     linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   padding: 72px 0;
+  overflow-x: hidden; /* prevent decorative backgrounds from causing x-scroll without clipping content */
+}
+
+.homepage .hero-section .row,
+.homepage .hero-section [class*="col-"] {
+  overflow: visible;
 }
 
 /* Full-screen hero only where explicitly applied */
@@ -254,4 +261,36 @@ body {
   .home-hero {
     min-height: 100vh;
   }
+}
+
+/* ---- Anti-overflow guards (mobile-first) ---- */
+html, body, #root, .homepage {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header, section, footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure media never exceeds viewport width */
+img, video, canvas, svg, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reduce row negative margins on small screens to avoid 1–2px bleed */
+@media (max-width: 576px) {
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Ensure content is visible even if AOS hasn't initialized yet */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
 }

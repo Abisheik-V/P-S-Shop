@@ -90,8 +90,8 @@ export default function Press() {
       <section className="py-5">
         <div className="container">
           <div className="text-center mb-4" data-aos="fade-up">
-            <h2 className="h1 mb-2 fw-bold text-white">Latest News</h2>
-            <p className="text-white">Recent announcements and press mentions.</p>
+            <h2 className="h1 mb-2 fw-bold text-dark">Latest News</h2>
+            <p className="text-dark">Recent announcements and press mentions.</p>
           </div>
           <div className="row g-4">
             <div className="col-md-6" data-aos="fade-up">

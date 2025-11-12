@@ -92,8 +92,8 @@ export default function About() {
       <section className="py-5">
         <div className="container">
           <div className="text-center mb-5" data-aos="fade-up">
-            <h2 className="h1 mb-3 text-white">What we value</h2>
-            <p className="text-white">Principles that guide our product and service.</p>
+            <h2 className="h1 mb-3 text-dark">What we value</h2>
+            <p className="text-dark">Principles that guide our product and service.</p>
           </div>
           <div className="row g-4">
             <div className="col-md-4" data-aos="zoom-in">

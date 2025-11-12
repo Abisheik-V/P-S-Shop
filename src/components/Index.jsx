@@ -194,8 +194,8 @@ export default function Index() {
         <div className="container">
           <div className="row align-items-center g-4">
             <div className="col-lg-6" data-aos="fade-right">
-              <h2 className="h1 mb-3 text-white">Integrated with carriers you trust</h2>
-              <p className="text-white mb-4">Multiple courier partners to give you the best speed and price. Choose the carrier or let us auto-select the optimal route.</p>
+              <h2 className="h1 mb-3 text-dark">Integrated with carriers you trust</h2>
+              <p className="text-dark mb-4">Multiple courier partners to give you the best speed and price. Choose the carrier or let us auto-select the optimal route.</p>
               <div className="d-flex gap-3 flex-wrap">
                 <span className="badge bg-light text-dark px-3 py-2">Express</span>
                 <span className="badge bg-light text-dark px-3 py-2">Surface</span>
