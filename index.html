@@ -10,8 +10,19 @@
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script type="module" crossorigin src="/P-S Shop/assets/index-CwIlMQyJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/P-S Shop/assets/index-2gljUF_z.css">
+    <script>
+      (function() {
+        var l = window.location;
+        var params = new URLSearchParams(l.search);
+        var p = params.get('p');
+        if (p) {
+          var newUrl = l.origin + p + (params.get('q') || "") + l.hash;
+          window.history.replaceState(null, "", newUrl);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/P-S-Shop/assets/index-_qCb-vCt.js"></script>
+    <link rel="stylesheet" crossorigin href="/P-S-Shop/assets/index-2gljUF_z.css">
   </head>
   <body>
     <div id="root"></div>
